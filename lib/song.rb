@@ -26,7 +26,7 @@ class Song
     @@artists.uniq
   end
 
-  def self genre_type
+  def self.genre_type
     genre_type = {}
     @@genres.each do |genre|
     if genre_type[genre]
@@ -37,4 +37,15 @@ class Song
   end
   genre_type
 end
+
+def self.artist_name
+  artist_name = {}
+  @@artists.each do |artist|
+    if artist_name[artist]
+      artist_name[artist] += 1
+    else
+      artist_name[artist] = 1
+    end
+  end
+  artist_name
 end
