@@ -49,3 +49,5 @@ def self.artist_name
   end
   artist_name
 end
+
+end
