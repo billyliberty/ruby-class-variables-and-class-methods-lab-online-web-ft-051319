@@ -35,3 +35,4 @@ class Song
   end
   genre_type
 end
+end
