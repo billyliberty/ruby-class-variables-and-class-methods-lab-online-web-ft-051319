@@ -27,6 +27,8 @@ class Song
   end
 
   def self genre_type
+    genre_type = {}
+    @@genres.each do |genre|
     if genre_type[genre]
       genre_type[genre] += 1
     else
